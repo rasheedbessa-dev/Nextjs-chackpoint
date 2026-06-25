@@ -1,0 +1,124 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.highlight {
+  color: #dc2626;
+}
+
+.heroContent h2 {
+  font-size: 1.5rem;
+  color: #808080;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  color: white;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
+}
+
+.secondaryBtn {
+  border: 2px solid rgba(220, 38, 38, 0.5);
+  color: #dc2626;
+}
+
+.secondaryBtn:hover {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.profileImg {
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(220, 38, 38, 0.2);
+  border: 3px solid rgba(220, 38, 38, 0.3);
+}
+
+.skills {
+  padding: 4rem 0;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #e0e0e0;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.skillCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(220, 38, 38, 0.15);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #a0a0a0;
+  transition: all 0.3s;
+}
+
+.skillCard:hover {
+  background: rgba(220, 38, 38, 0.08);
+  border-color: #dc2626;
+  color: #dc2626;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .cta {
+    justify-content: center;
+  }
+}
